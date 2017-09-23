@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="cartStyle.css">
+    <title> Shopping Cart </title>
+</head>
+
+<body id= "bground">
+    <section id="div1" class="pics"><img src="images/ps4Pro1.png">
+        <div id="pdiv" class="text"><b>Sony Playstation Pro 4</b>
+            <br>By: Sony Entertainment
+            
+            <br> Price:$<b class="price">499.99</b>
+            <br> - Spectacular graphics – Explore vivid game worlds with rich visuals heightened by PS4 Pro
+            <br> - Enhanced gameplay – Support for faster frame rates delivers super-sharp action for select PS4 games
+            <br> - One unified gaming community – Compatible with every PS4 game. Play online with other PS4 players with PlayStation Plus
+            <br> - Extraordinary entertainment – With up to 4K streaming and 4K auto-upscaling for video content
+            <br> <b id="stock">In Stock!</b>
+            <br>Quantity:
+            <input type="number" min="0" id="qty1" class="qty"> </div>
+    </section>
+    <section id="div2" class="pics"><img src="images/nSwitch1.png">
+        <div id="ndiv" class="text"><b>Nitendo Switch</b>
+            <br>By: Nintendo Of America
+            
+            <br> Price:$<b class="price">399.99</b>
+            <br> - Whether you're kicking back at home in front of the TV or out with friends, Nintendo Switch gives you the full single player or multiplayer gaming experience.
+            <br> - Nintendo Switch's main component is the Switch Console, a tablet-shaped device that's packed with cutting-edge hardware.
+            <br> - Slide the Switch Console into the Switch Dock and you'll enjoy a complete, high-definition gaming experience on your TV.
+            <br> - When it's time to head out and meet your friends, simply slide the Switch gaming system out of the dock and take it with you on the go.
+            <br> - If you want to take on your buddy in your favourite game, place the Switch on a table top and detach the wireless joycon contollers from each side to start your multiplayer game!
+            <br> <b id="stock">In Stock!</b>
+            <br>Quantity:
+            <input type="number" min="0" id="qty" class="qty"> </div>
+    </section>
+        <table id="cart" border="5px">
+            <tr id="yourcart">
+                <th>Your Cart</th>
+            </tr>
+            <tr>
+                <th>PlayStation 4 Pro
+                    </th>
+            </tr>
+            <tr>
+                <td>Amount:
+                    <p class="quan" id="psquan"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Nintendo Switch</th>
+            </tr>
+            <tr>
+                <td>Amount:
+                    <p class="quan" id="nSquan"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>Shipping:</th>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="radio" id="std" name="shipping" value="4.99" checked onclick="add()">Standard($4.99)
+                        
+                        <input type="radio" id="exp" name="shipping" value="19.99" onclick="add()" >Expedited ($19.99)
+                        </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Gift Wrapping </th>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="radio" id="gyes" name="gift" onclick="add()" >Yes($9.99)
+                        
+                        <input type="radio" id="gno" name="gift" checked onclick ="add()">No </form>
+                </td>
+            </tr>
+            <tr>
+                <th> Insurance (10% of total items before taxes) </th>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="radio" id="insyes" name="insur" onclick="add()">Yes
+                        
+                        <input type="radio" id="insno" name="insur" checked onclick="add()">No
+                        </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Join GameZone</th>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="radio" id="gzyes" name="mem" checked>Yes
+                        
+                        <input type="radio" id="gzno" name="mem">No </form>
+                </td>
+            </tr>
+            <tr>
+                <th> Promo Code (Save 20%) </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <button id="generate">Generate</button>
+                        <code id="output"></code>
+                    </p>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Subtotal</h3>
+                <p class="calc" id="subtotal"></p></td>
+            </tr>
+            <tr>
+            <td>
+                <h3>Insurance</h3>
+                <p class="insur" id="insurcalc"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Promo</h3>
+                <p id="promo" class="calc" onclick="add()"></p>
+                    
+            </tr>
+            <tr>
+                <td>
+                    <h3>Tax(13%)</h3>
+                <p id="tax" class="calc"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Total</h3>
+                <p id="total" class="calc"></p>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <form action="ThankYou/thankYou.html">
+                <input type="reset" value="Reset" onclick="history.go(0)">
+                    <input type=submit value="Submit">
+                
+                </form>
+                </td>
+            
+            </tr>
+        </table>
+
+    <script src="cartScript.js"></script>
+</body>
+
+</html>

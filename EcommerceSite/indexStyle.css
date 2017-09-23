@@ -1,0 +1,46 @@
+body{
+    background-image: url(ShoppingCart/images/background3.jpg);
+    background-position: center;
+}
+
+#div1{
+    font-family: Arial Black;
+    font-size: 28px;
+    position: absolute;
+    color:#E1DACE;
+    margin-left: 48%;
+    margin-top: 15%;
+    
+    
+}
+#div2{
+    border-radius: 10px;
+  font-family: Arial Black;
+    background-color: #E1DACE;
+    font-size: 15px;
+    text-align: right;
+    position: absolute;
+    color:#121212;
+    margin-left: 45%;
+    margin-top: 35%;  
+    align-content: center;
+}
+#submit{
+    color: #E1DACE;
+    background-color: #121212;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: black;
+    cursor: pointer;
+    width: 100%;
+}
+form{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
